@@ -3,13 +3,6 @@ BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 ####
 URL: https://github.com/Lingks00/COMP7404D_BERT_GroupProject.git
 
-## Group Members:
-+ Jiang Wenxuan		xxx
-+ Jiang Qiyue		xxx
-+ Lau Ling Kei	3036088838
-+ Li Xiaoxu			xxx
-+ Zong Chen			3036035491
-
 ## Sentiment Analysis 
 Project Name: Question Answering System Based on BERT
 
