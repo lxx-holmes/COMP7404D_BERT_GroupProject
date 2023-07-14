@@ -66,9 +66,11 @@ We would also like to thank the authors of the following websites and articles t
 
 ## BERT on SQuAD 1.1 Dataset
 ### Description
-We fine-tuned the improved Bert model for a open-domain QA system based on SQUAD V1.1. According to evaluation, this model achieve 80% of exact, 87% of f1. Training of BERT models is supported via [Train_model_GPU_BERT_SQUAD1.1.ipynb]
+We fine-tuned the improved Bert model for a open-domain QA system based on SQUAD V1.1. According to evaluation, this model achieve 80% of exact, 87% of f1. 
 ### Usage Guide
-
+1. Clone the repository to your local machine.
+2. Install the required packages .
+3. Run the codes in Train_model_GPU_BERT_SQUAD1.1.ipynb. 
 ### Acknowledgment
 - [RoBERTa: A Robustly Optimized BERT Pretraining Approach]
 (https://arxiv.org/abs/1907.11692): A research paper about improved Bert model.
