@@ -6,7 +6,7 @@ URL: https://github.com/Lingks00/COMP7404D_BERT_GroupProject.git
 ## Sentiment Analysis 
 Project Name: Question Answering System Based on BERT
 
-### Project Structure
+### Structure
 ```
 ├── models
 │   └── BERT_SQUAD_QA.ipynb
@@ -43,7 +43,9 @@ We would also like to thank the authors of the following websites and articles t
 - [How to Fine-Tune BERT for Text Classification?](https://arxiv.org/abs/1905.05583): a research paper by Sunil Kumar Sahu and V. Murahari that proposes a method for fine-tuning the BERT model for text classification tasks.
 
 
-# SQuAD 1.1
+## BERT on SQuAD 1.1 Dataset
+
+### Structure
 ```
  ├── models
  │ └── Train_model_GPU_BERT_SQUAD1.1.ipynb
@@ -51,7 +53,7 @@ We would also like to thank the authors of the following websites and articles t
 Description:
 We fine-tuned the improved Bert model for a open-domain QA system based on SQUAD V1.1. According to evaluation, this model achieve 80% of exact, 87% of f1. Training of BERT models is supported via [Train_model_GPU_BERT_SQUAD1.1.ipynb]
 
-# Reference
+### Reference
 - [RoBERTa: A Robustly Optimized BERT Pretraining Approach]
 (https://arxiv.org/abs/1907.11692): A research paper about improved Bert model.
 
@@ -106,8 +108,8 @@ python main.py --train_file dataset/train.json --predict_file dataset/test.json 
 
 The above command will run the `main.py` to evaluate the test set on the model. In the output directory, you can check the output file which contains the answer given by the model to the questions in the test data.
 
-# GLUE 
+## GLUE 
 
-## Fine Tuning of GLUE in BERT
+### Fine Tuning of GLUE in BERT
 
 
