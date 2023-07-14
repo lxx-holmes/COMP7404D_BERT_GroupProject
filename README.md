@@ -91,3 +91,9 @@ python main.py --train_file dataset/train.json --predict_file dataset/test.json 
 ```
 
 The above command will run the `main.py` to evaluate the test set on the model. In the output directory, you can check the output file which contains the answer given by the model to the questions in the test data.
+
+# GLUE 
+
+## Fine Tuning of GLUE in BERT
+
+
