@@ -1,11 +1,11 @@
 # COMP7404D_BERT
 BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding on sentiment analysis on movie comments and SQuAD datset Q&amp;A based on BERT models 
 ## Group Members:
-Jiang Wenxuan
-Jiang Qiyue
-Lau Ling Kei
-Li Xiaoxu
-Zong Chen
+ Jiang Wenxuan
+ Jiang Qiyue
+ Lau Ling Kei
+ Li Xiaoxu
+ Zong Chen
 ## Experiments
 In this projects, we fine-tuned BERT model for 4 tasks:
 1. SST2 dataset for sentiment analysis on movie review text
@@ -54,8 +54,8 @@ We would like to acknowledge the following third-party libraries and websites th
 - [SST2 dataset extracted from IMDb dataset](https://ai.stanford.edu/~amaas/data/sentiment/): a dataset of 6920 movie reviews from IMDb labeled as positive or negative.
 
 We would also like to thank the authors of the following websites and articles that provided valuable insights and guidance for this project:
--Bansal, L. (2021, Sep 18). Fine-Tuning BERT for Text Classification in PyTorch [Blog post]. Retrieved from https://luv-bansal.medium.com/fine-tuning-bert-for-text-classification-in-pytorch-503d97342db2 Alammar, J. (2019, Nov 26). 
--A Visual Guide to Using BERT for the First Time [Web article]. Retrieved from http://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/
+- Bansal, L. (2021, Sep 18). Fine-Tuning BERT for Text Classification in PyTorch [Blog post]. Retrieved from https://luv-bansal.medium.com/fine-tuning-bert-for-text-classification-in-pytorch-503d97342db2 Alammar, J. (2019, Nov 26). 
+- A Visual Guide to Using BERT for the First Time [Web article]. Retrieved from http://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/
 
 
 ## BERT on SQuAD 1.1 Dataset
