@@ -84,7 +84,8 @@ This project involves **BERT** (Bidirectional Encoder Representations from Trans
 
 **SQuAD 2.0** (Stanford Question Answering Dataset 2.0) is a widely used benchmark dataset for question answering (QA) tasks in natural language processing. SQuAD 2.0 is designed to test the ability of QA systems to not only provide accurate answers but also to identify when no answer is available.
 
-This project implements a Question-Answering model based on BERT, trained and tested with SQuAD 2.0 dataset. The codes are based on BERT QA model provided by Huggingface: https://github.com/huggingface/transformers/tree/main/examples/pytorch/question-answering
+This project implements a Question-Answering model based on BERT, trained and tested with SQuAD 2.0 dataset. 
+
 ### Usage Guide
 #### Files
 
@@ -127,6 +128,7 @@ python main.py --train_file dataset/train.json --predict_file dataset/test.json 
 The above command will run the `main.py` to evaluate the test set on the model. In the output directory, you can check the output file which contains the answer given by the model to the questions in the test data.
 
 ### Acknowledgment
+The codes are based on BERT QA model provided by Huggingface: https://github.com/huggingface/transformers/tree/main/examples/pytorch/question-answering
 
 ## GLUE 
 
