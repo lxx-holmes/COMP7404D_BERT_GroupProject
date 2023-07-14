@@ -1,22 +1,22 @@
 # COMP7404D_BERT
 BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding on sentiment analysis on movie comments and SQuAD datset Q&amp;A based on BERT models 
-####
+##
 URL: https://github.com/Lingks00/COMP7404D_BERT_GroupProject.git
-
-## Sentiment Analysis 
-Project Name: Question Answering System Based on BERT
-
-### Project Structure
+## Project Structure
 ```
-├── models
-│   └── BERT_SQUAD_QA.ipynb
+├── Sentiment Analysis
 │   └── BERT_fine_tuning_sentiment_analysis.ipynb
+├── SQUAD1.1
+│   └── Train_model_GPU_BERT_SQUAD1.1.ipynb
+├── SQUAD2.0
+│   └── xxxx.ipynb
 └── README.md
 ```
 - `models`: contains the trained model file.
 - `README.md`: the readme file you're currently reading.
 ———————————
-### Model2: BERT Fine-Tuning for Sentiment Analysis
+
+## Sentiment Analysis 
 
 ### Description
 This project provides a solution for classifying movie comments as positive or negative using the BERT model. The project includes code references, enhancements, and hyperparameters fine-tuning to improve the model's performance.
@@ -43,7 +43,7 @@ We would also like to thank the authors of the following websites and articles t
 - [How to Fine-Tune BERT for Text Classification?](https://arxiv.org/abs/1905.05583): a research paper by Sunil Kumar Sahu and V. Murahari that proposes a method for fine-tuning the BERT model for text classification tasks.
 
 
-# SQuAD 1.1
+## SQuAD 1.1
 ```
  ├── models
  │ └── Train_model_GPU_BERT_SQUAD1.1.ipynb
