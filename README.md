@@ -4,7 +4,6 @@ BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 URL: https://github.com/Lingks00/COMP7404D_BERT_GroupProject.git
 
 ## Sentiment Analysis 
-Project Name: Question Answering System Based on BERT
 
 ### Project Structure
 ```
@@ -16,7 +15,6 @@ Project Name: Question Answering System Based on BERT
 - `models`: contains the trained model file.
 - `README.md`: the readme file you're currently reading.
 ———————————
-### Model2: BERT Fine-Tuning for Sentiment Analysis
 
 ### Description
 This project provides a solution for classifying movie comments as positive or negative using the BERT model. The project includes code references, enhancements, and hyperparameters fine-tuning to improve the model's performance.
