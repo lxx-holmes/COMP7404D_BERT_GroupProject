@@ -42,6 +42,20 @@ We would also like to thank the authors of the following websites and articles t
 - [BERT Fine-Tuning Tutorial with PyTorch](https://mccormickml.com/2019/07/22/BERT-fine-tuning/): a tutorial by Chris McCormick that provides a step-by-step guide for fine-tuning the BERT model for a specific task.
 - [How to Fine-Tune BERT for Text Classification?](https://arxiv.org/abs/1905.05583): a research paper by Sunil Kumar Sahu and V. Murahari that proposes a method for fine-tuning the BERT model for text classification tasks.
 
+
+# SQuAD 1.1
+```
+ ├── models
+ │ └── Train_model_GPU_BERT_SQUAD1.1.ipynb
+```
+Description:
+We fine-tuned the improved Bert model for a open-domain QA system based on SQUAD V1.1. According to evaluation, this model achieve 80% of exact, 87% of f1. Training of BERT models is supported via [Train_model_GPU_BERT_SQUAD1.1.ipynb]
+
+# Reference
+- [RoBERTa: A Robustly Optimized BERT Pretraining Approach]
+(https://arxiv.org/abs/1907.11692): A research paper about improved Bert model.
+
+
 ## BERT on SQuAD 2.0 Dataset
 
 ### Introduction
