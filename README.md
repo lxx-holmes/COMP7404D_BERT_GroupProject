@@ -122,6 +122,35 @@ The above command will run the `main.py` to evaluate the test set on the model. 
 The codes are based on BERT QA model provided by Huggingface: https://github.com/huggingface/transformers/tree/main/examples/pytorch/question-answering
 
 ## GLUE 
+COMP7404 - Computational intelligence and machine learning
+
+Project 7 BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
+Subproject: BERT fine-tuning 
+Author: Wenxuan Jiang
+
+* Use BertForSequenceClassification pre-trained and pre-modificated model
+* Use GLUE-CoLA dataset
+
+For this task, we first want to modify the pre-trained BERT model to give outputs for classification, and then we want to continue training the model on our dataset until that the entire model, end-to-end, is well-suited for our task.
+
+We'll be using BertForSequenceClassification. This is the normal BERT model with an added single linear layer on top for classification that we will use as a sentence classifier. As we feed input data, the entire pre-trained BERT model and the additional untrained classification layer is trained on our specific task.
+
+For the purposes of fine-tuning, the authors recommend choosing from the following values (from Appendix A.3 of the BERT paper):
+
+Batch size: 16, 32
+Learning rate (Adam): 5e-5, 3e-5, 2e-5
+Number of epochs: 2, 3, 4
+We chose:
+
+Batch size: 32
+Learning rate: 2e-5
+Epochs: 2
+
+
+Note:
+
+To maximize the score, we should remove the "validation set" (which we used to help determine how many epochs to train for) and train on the entire training set.
+The library documents the expected accuracy for this benchmark is 49.23.
 
 ### Description
 ### Usage Guide
