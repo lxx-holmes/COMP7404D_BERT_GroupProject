@@ -40,8 +40,6 @@ URL: https://github.com/Lingks00/COMP7404D_BERT_GroupProject.git
 │         └── dev-v1.1.json   predictions.txt   training_set.json
 │   └──utils
 │         └── embedding_utils.py   _init_.py   utils.py
-
-
 ├── SQUAD2.0
 │   └── main.py
 │   └── modeling_bert.py
