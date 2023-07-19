@@ -11,10 +11,9 @@ In this projects, we fine-tuned BERT model for 4 tasks:
 URL: https://github.com/Lingks00/COMP7404D_BERT_GroupProject.git
 ## Project Structure
 ```
-├── Sentiment Analysis
-│   └── BERT_fine_tuning_sentiment_analysis.ipynb
-│   └── BERT_fine_tuning_sentiment_analysis_submit.pdf
-│   └── testing_data.csv
+├── GLUE
+│   └── BERT_GLUE.ipynb
+│   └── GLUE VID.zip
 ├── SQUAD1.1
 │   └── Train_model_GPU_BERT_SQUAD1.1.ipynb
 │   └── compute_answers.py
@@ -38,35 +37,26 @@ URL: https://github.com/Lingks00/COMP7404D_BERT_GroupProject.git
 │         └── utils_squad.py   utils_squad_evaluate.py
 │   └── output
 │         └── predictions_.json
-├── GLUE
-│   └── BERT_GLUE.ipynb
-│   └── GLUE VID.zip
+├── Sentiment Analysis
+│   └── BERT_fine_tuning_sentiment_analysis.ipynb
+│   └── BERT_fine_tuning_sentiment_analysis_submit.pdf
+│   └── testing_data.csv
 └── README.md
 ```
-
-## Sentiment Analysis 
+## GLUE 
 
 ### Description
-This project provides a solution for classifying movie comments as positive or negative using the BERT model. The project includes code references, enhancements, and hyperparameters fine-tuning to improve the model's performance.
+* Use BertForSequenceClassification pre-trained and pre-modificated model
+* Use GLUE-CoLA dataset
+For this task, we first want to modify the pre-trained BERT model to give outputs for classification, and then we want to continue training the model on our dataset until that the entire model, end-to-end, is well-suited for our task.
+
+We'll be using BertForSequenceClassification. This is the normal BERT model with an added single linear layer on top for classification that we will use as a sentence classifier. As we feed input data, the entire pre-trained BERT model and the additional untrained classification layer is trained on our specific task.
 
 ### Usage Guide
-1. Clone the repository to your local machine.
-2. Install the required packages listed in the `import necessary libraries` part.
-3. Run the codes and check the results. If there is a GPU available in your device, the running speed will be much faster (around half hour).
-
+Run the BERT_GLUE.ipynb file on Colab
 ### Acknowledgment
-We would like to acknowledge the following third-party libraries and websites that were used in this project:
-
-- [Hugging Face Transformers](https://huggingface.co/transformers/): a Python library for natural language processing using pre-trained transformer models such as BERT.
-- [PyTorch](https://pytorch.org/): an open-source machine learning library for Python used to build and train neural networks.
-- [Pandas](https://pandas.pydata.org/): a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool.
-- [scikit-learn](https://scikit-learn.org/stable/): a Python library for machine learning built on top of NumPy, SciPy, and matplotlib.
-- [SST2 dataset extracted from IMDb dataset](https://ai.stanford.edu/~amaas/data/sentiment/): a dataset of 6920 movie reviews from IMDb labeled as positive or negative.
-
-We would also like to thank the authors of the following websites and articles that provided valuable insights and guidance for this project:
-- Bansal, L. (2021, Sep 18). Fine-Tuning BERT for Text Classification in PyTorch [Blog post]. Retrieved from https://luv-bansal.medium.com/fine-tuning-bert-for-text-classification-in-pytorch-503d97342db2 Alammar, J. (2019, Nov 26). 
-- A Visual Guide to Using BERT for the First Time [Web article]. Retrieved from http://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/
-
+The pre-trained model is BertForSequenceClassification from Huggingface:
+https://huggingface.co/docs/transformers/model_doc/bert#bertforsequenceclassification
 
 ## BERT on SQuAD 1.1 Dataset
 ### Description
@@ -101,11 +91,6 @@ python -m ipykernel install --user --name=squad_qa_pytorch
 ### Acknowledgment
 - [RoBERTa: A Robustly Optimized BERT Pretraining Approach]
 (https://arxiv.org/abs/1907.11692): A research paper about improved Bert model.
-
-
-
-
-
 
 
 ## BERT on SQuAD 2.0 Dataset
@@ -162,17 +147,26 @@ The above command will run the `main.py` to evaluate the test set on the model. 
 ### Acknowledgment
 The codes are based on BERT QA model provided by Huggingface: https://github.com/huggingface/transformers/tree/main/examples/pytorch/question-answering
 
-## GLUE 
+
+## Sentiment Analysis 
 
 ### Description
-* Use BertForSequenceClassification pre-trained and pre-modificated model
-* Use GLUE-CoLA dataset
-For this task, we first want to modify the pre-trained BERT model to give outputs for classification, and then we want to continue training the model on our dataset until that the entire model, end-to-end, is well-suited for our task.
-
-We'll be using BertForSequenceClassification. This is the normal BERT model with an added single linear layer on top for classification that we will use as a sentence classifier. As we feed input data, the entire pre-trained BERT model and the additional untrained classification layer is trained on our specific task.
+This project provides a solution for classifying movie comments as positive or negative using the BERT model. The project includes code references, enhancements, and hyperparameters fine-tuning to improve the model's performance.
 
 ### Usage Guide
-Run the BERT_GLUE.ipynb file on Colab
+1. Clone the repository to your local machine.
+2. Install the required packages listed in the `import necessary libraries` part.
+3. Run the codes and check the results. If there is a GPU available in your device, the running speed will be much faster (around half hour).
+
 ### Acknowledgment
-The pre-trained model is BertForSequenceClassification from Huggingface:
-https://huggingface.co/docs/transformers/model_doc/bert#bertforsequenceclassification
+We would like to acknowledge the following third-party libraries and websites that were used in this project:
+
+- [Hugging Face Transformers](https://huggingface.co/transformers/): a Python library for natural language processing using pre-trained transformer models such as BERT.
+- [PyTorch](https://pytorch.org/): an open-source machine learning library for Python used to build and train neural networks.
+- [Pandas](https://pandas.pydata.org/): a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool.
+- [scikit-learn](https://scikit-learn.org/stable/): a Python library for machine learning built on top of NumPy, SciPy, and matplotlib.
+- [SST2 dataset extracted from IMDb dataset](https://ai.stanford.edu/~amaas/data/sentiment/): a dataset of 6920 movie reviews from IMDb labeled as positive or negative.
+
+We would also like to thank the authors of the following websites and articles that provided valuable insights and guidance for this project:
+- Bansal, L. (2021, Sep 18). Fine-Tuning BERT for Text Classification in PyTorch [Blog post]. Retrieved from https://luv-bansal.medium.com/fine-tuning-bert-for-text-classification-in-pytorch-503d97342db2 Alammar, J. (2019, Nov 26). 
+- A Visual Guide to Using BERT for the First Time [Web article]. Retrieved from http://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/
