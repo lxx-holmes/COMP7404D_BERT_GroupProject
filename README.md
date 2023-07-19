@@ -3,10 +3,10 @@ BERT: Deep Bidirectional Transformers for Language Understanding
 
 ## Experiments
 In this projects, we fine-tuned BERT model for 4 tasks:
-1. SST2 dataset for sentiment analysis on movie review text
+1. GLUE-CoLA dataset for sequence classification task
 2. SQUAD1.1 dataset for question-answering
 3. SQUAD2.0 dataset for question-answering
-4. GLUE-CoLA dataset for sequence classification task
+4. SST2 dataset for sentiment analysis on movie review text
 ##
 URL: https://github.com/Lingks00/COMP7404D_BERT_GroupProject.git
 ## Project Structure
