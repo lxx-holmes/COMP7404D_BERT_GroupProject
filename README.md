@@ -1,5 +1,5 @@
-# COMP7404D_BERT
-BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding on sentiment analysis on movie comments and SQuAD datset Q&amp;A based on BERT models 
+# COMP7404D_BERT_Group7
+BERT: Deep Bidirectional Transformers for Language Understanding
 
 ## Experiments
 In this projects, we fine-tuned BERT model for 4 tasks:
